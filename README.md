@@ -14,16 +14,16 @@ MyLibreLab docs (also useful here) : [MyLibreLab Docs](https://mylibrelab.github
 Unfortunately both MyOpenLab and MyLibreLab projects got discontinued. However, the orignal software from [here](https://myopenlab.org) is still usable, but requires Java 8. This repository tries to provide a version of MyOpenLab that runs with the latest java (for now, this is Java 17). Also, I have added a couple of changes, which are described in the Changelog.
 
 # Building
-Dependencies :
+**Dependencies :**
 Rhino and Rhino JSR-223 javascript engine
-JSON libarary
+JSON library
 JSSC
 JAXB libarary
-Old java swing GroupLayout jar.
+Old java swing GroupLayout jar
 
-Dependencies are already included in distribution/myopenlab_lib.
+Dependencies are already included in `distribution/myopenlab_lib`.
 
-To build you will need Java JDK and Apache ANT installed. Run `ant` in this directory. The output will be the `myopenlab.jar` java archive in the `distribution` directory.
+To build you will need Java JDK and Apache ANT installed. Run `ant` in this directory. The output will be the `myopenlab.jar` java archive in the `distribution` directory. A prebuilt copy is included in the `distribution` folder.
 
 # License
 Software is available under GNU GPL v3 license. See [here](https://www.gnu.org/licenses/gpl-3.0.html).
