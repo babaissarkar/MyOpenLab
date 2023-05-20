@@ -1,0 +1,20 @@
+<synth>
+    <style id="defaultStyle">
+    	<opaque value="true"/>
+        <font name="Dialog" size="13"/>
+        <state>
+            <color value="#FFFFFF" type="BACKGROUND"/>
+            <color value="#000000" type="FOREGROUND"/>
+        </state>
+    </style>
+    <bind style="defaultStyle" type="region" key=".*"/>
+    
+    <style id="comboBoxStyle">
+    	<opaque value="true"/>
+        <font name="Dialog" size="13"/>
+        <state>
+            <color value="#E9ECF2" type="BACKGROUND"/>
+            <color value="#000033" type="FOREGROUND"/>
+        </state>
+    </style>
+</synth>
