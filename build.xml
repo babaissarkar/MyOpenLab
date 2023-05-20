@@ -14,13 +14,6 @@
             </manifest>
             <fileset dir="${dir.buildfile}/bin"/>
         </jar>
-        <delete dir="${dir.jarfile}/myopenlab_lib"/>
-        <mkdir dir="${dir.jarfile}/myopenlab_lib"/>
-        <copy file="/home/ssarkar/.ant/lib/jaxb-api-2.4.0-b180830.0359.jar" todir="${dir.jarfile}/myopenlab_lib"/>
-        <copy file="/home/ssarkar/.ant/lib/json-20230227.jar" todir="${dir.jarfile}/myopenlab_lib"/>
-        <copy file="/home/ssarkar/.ant/lib/jssc-2.9.2.jar" todir="${dir.jarfile}/myopenlab_lib"/>
-        <copy file="/home/ssarkar/.ant/lib/rhino-1.7.14.jar" todir="${dir.jarfile}/myopenlab_lib"/>
-        <copy file="/home/ssarkar/.ant/lib/rhino-engine-1.7.14.jar" todir="${dir.jarfile}/myopenlab_lib"/>
-        <copy file="/home/ssarkar/.ant/lib/swing-layout-1.0.4.jar" todir="${dir.jarfile}/myopenlab_lib"/>
+
     </target>
 </project>
