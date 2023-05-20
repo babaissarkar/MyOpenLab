@@ -1,4 +1,5 @@
-build/
-nbproject/private/
-dist/
-*.~ava
+*~
+*.bkp
+*.classpath
+*.project
+bin

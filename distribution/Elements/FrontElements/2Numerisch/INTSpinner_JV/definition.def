@@ -1,7 +1,0 @@
-ISDIRECTORY  = FALSE
-CAPTION      = Spinner_JV (INT)
-CAPTION_EN   = Spinner_JV (INT)
-CAPTION_ES   = Spinner_JV (INT)
-ClassCircuit = Spinner
-ClassFront   = Panel
-Icon         = bin/spinner.gif
