@@ -5,7 +5,9 @@ Typical events include mouse clicks, key presses, and messages from other progra
 
 # Important Links
 MyOpenLab website : [MyOpenLab](https://myopenlab.org)
+
 MyLibreLab (fork of MyOpenLab, after the original was discontinued) : [MyLibreLab](https://github.com/MyLibreLab/MyLibreLab)
+
 MyLibreLab docs (also useful here) : [MyLibreLab Docs](https://mylibrelab.github.io/user-documentation/)
 
 # Objective
