@@ -26,6 +26,9 @@ Dependencies are already included in `distribution/myopenlab_lib`.
 
 To build you will need Java JDK and Apache ANT installed. Run `ant` in this directory. The output will be the `myopenlab.jar` java archive in the `distribution` directory. A prebuilt copy is included in the `distribution` folder.
 
+# Running
+You will need all the files in the `distribution` directory. Clone this repository or download the Zip from the Code button at top right. Then navigate to the distribution folder and run the `start-` file corresponding to your OS. You will need Java JRE installed (at least version 15). (Tested on Linux so far)
+
 # License
 Software is available under GNU GPL v3 license. See [here](https://www.gnu.org/licenses/gpl-3.0.html).
 
