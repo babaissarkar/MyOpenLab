@@ -15,11 +15,11 @@ Unfortunately both MyOpenLab and MyLibreLab projects got discontinued. However, 
 
 # Building
 **Dependencies :**
-* Rhino and Rhino JSR-223 javascript engine
-* JSON library
-* JSSC
-* JAXB libarary
-* Old Java Swing GroupLayout library
+* [Rhino and Rhino JSR-223 javascript engine](https://github.com/mozilla/rhino)
+* [JSON library](https://github.com/stleary/JSON-java)
+* [JSSC Serial Port library](https://github.com/java-native/jssc)
+* [Java XML Binding library](https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api)
+* Old Java Swing GroupLayout library (included)
   (needed as not all code has not been moved to new Java Swing Group Layout, which is included with java.)
 
 Dependencies are already included in `distribution/myopenlab_lib`.
