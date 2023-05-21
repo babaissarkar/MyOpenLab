@@ -14,34 +14,36 @@ MyLibreLab docs (also useful here) : [MyLibreLab Docs](https://mylibrelab.github
 Unfortunately both MyOpenLab and MyLibreLab projects got discontinued. However, the orignal software from [here](https://myopenlab.org) is still usable, but requires Java 8. This repository tries to provide a version of MyOpenLab that runs with the latest java (for now, this is Java 17). Also, I have added a couple of changes, which are described in the Changelog.
 
 # Licensing and Contributors
-Software is available under GNU GPL v3 license. See [here](https://www.gnu.org/licenses/gpl-3.0.html) or in the `license.txt` file included. 
+Software is available under GNU GPL v3 license. See [here](https://www.gnu.org/licenses/gpl-3.0.html) or in the `license.txt` file included.  
 
-MyOpenLab Project Initiator: Carmelo Salafia
-Email: cswi@gmx.de
+## Original Contributors
+MyOpenLab Project Initiator: Carmelo Salafia  
+Email: cswi@gmx.de  
 http://www.myopenlab.de
 
-MyOpenLab Development, documentation and examples:
-Robinson Javier Velásquez.
-Electronics and Telecomunications Engineer
-Catholic University of Colombia
-Email: javiervelasquez125@gmail.com
-Bogotá D,C; - Colombia.
-http://myopenlab.org
+MyOpenLab Development, documentation and examples:  
+Robinson Javier Velásquez.  
+Electronics and Telecomunications Engineer  
+Catholic University of Colombia  
+Email: javiervelasquez125@gmail.com  
+Bogotá D,C; - Colombia.  
+http://myopenlab.org  
 
-Spanisch Übersetzung, Elemente und Element Docs: Prof. José Manuel Ruiz Gutiérrez
-eMail : j.m.r.gutierrez@gmail.com
-Tomelloso (Ciudad Real) ESPAÑA.
+Spanisch Übersetzung, Elemente und Element Docs: Prof. José Manuel Ruiz Gutiérrez  
+eMail : j.m.r.gutierrez@gmail.com  
+Tomelloso (Ciudad Real) ESPAÑA.  
 
-Thanks to:
-Universidad Católica de Colombia
-Catholic University of Colombia
-https://www.ucatolica.edu.co/portal/
+Thanks to:  
+Universidad Católica de Colombia  
+Catholic University of Colombia  
+https://www.ucatolica.edu.co/portal/  
 
-Source code have been imported from (https://github.com/sPyOpenSource/myopenlab) on 20.05.2023.
+## New contributions
+Source code have been imported from (https://github.com/sPyOpenSource/myopenlab) on 20.05.2023.  
 
-Please see the Info dialog (Help -> Info) inside this software for detailed information on contributors and licensing.
+Please see the Info dialog (Help -> Info) inside this software for detailed information on contributors and licensing.  
 
-Any further changes by me in this repository are © 2023 Subhraman Sarkar and are available under the same license (GNU GPL v3). Changed are documented in the CHANGELOG file.
+Any further changes by me (babaissarkar) in this repository are © 2023 Subhraman Sarkar and are available under the same license (GNU GPL v3). Changed are documented in the CHANGELOG file.
 
 # Building
 **Dependencies :**
