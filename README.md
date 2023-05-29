@@ -58,6 +58,11 @@ Dependencies are already included in `distribution/myopenlab_lib`.
 
 To build you will need Java JDK and Apache ANT installed. Run `ant` in this directory. The output will be the `myopenlab.jar` java archive in the `distribution` directory. A prebuilt copy is included in the `distribution` folder.
 
+# AppImage
+A preliminary AppImage of MyOpenLab is now available in Releases section. The AppImage contains the program + dependency libraries + a subset of AdoptOpenJDK Temurin Java 17. The AppImage needs AppImageTool, and can be built by : `appimagetool.AppImage MyOpenLab.AppDir MyOpenLab.AppImage`.
+
 # Running
-You will need all the files in the `distribution` directory. Clone this repository or download the Zip from the Code button at top right. Then navigate to the distribution folder and run the `start-` file corresponding to your OS. You will need Java JRE installed (at least version 15). (Tested on Linux so far)
+You will need all the files in the `distribution` directory. Clone this repository or download the Zip from the Code button at top right. Then navigate to the distribution folder and run the `start-` file corresponding to your OS. You will need Java JRE installed (at least version 15). (Tested on Linux so far).
+An AppImage is now available, and can be run easily by making the file executable (`chmod +x MyOpenLab.AppImage`) and running it (`./MyOpenLab.AppImage`).
+
 
