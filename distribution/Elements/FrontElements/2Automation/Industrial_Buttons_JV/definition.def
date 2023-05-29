@@ -1,6 +1,0 @@
-ISDIRECTORY = TRUE
-CAPTION   =Industrial Buttons JV
-CAPTION_EN=Industrial Buttons JV
-CAPTION_ES=Botones Industriales JV
-ICON=icon32.png
-VM_DIR_EDITABLE = TRUE

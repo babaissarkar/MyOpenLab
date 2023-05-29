@@ -1,6 +1,0 @@
-ISDIRECTORY     = true
-CAPTION         = Automation
-CAPTION_EN      = Automation
-CAPTION_ES      = Automatismos
-ICON            = icon.png
-VM_DIR_EDITABLE = FALSE

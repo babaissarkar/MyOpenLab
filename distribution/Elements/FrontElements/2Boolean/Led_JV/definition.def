@@ -1,8 +1,0 @@
-ISDIRECTORY  = FALSE
-CAPTION      = Led_JV
-CAPTION_EN= Led_JV
-CAPTION_ES= Led_JV
-Jar          = bin/Compass_JV.jar
-ClassCircuit = GaugeCircuit
-ClassFront   = GaugePanel
-Icon         = bin/Gauge.gif
