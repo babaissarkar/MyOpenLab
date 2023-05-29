@@ -41,7 +41,7 @@ public class Settings {
     private String documentation_language = "";
     private String elementPalettePath = "";
     private String userdefinedElementsPath = "";
-    public String projectSavePath;
+    public String projectSavePath; // Default Save Path for Projects
     public String elementsPath;
     public int themeNo = 0;
 

@@ -38,11 +38,10 @@ public class Loader
         
         URL url2 = new File(elementPath).toURI().toURL(); 
 
-        cl = new URLClassLoader( new URL[]{ url, url2},Thread.currentThread().getContextClassLoader());
+        cl = new URLClassLoader( new URL[]{ url, url2 }, Thread.currentThread().getContextClassLoader());
                 
         Class<?> c = cl.loadClass(klassename );
-        
-        o = c.newInstance();     
+        o = c.getDeclaredConstructor().newInstance();    
     } 
     catch (Exception | UnsupportedClassVersionError ex)
     {
@@ -51,20 +50,18 @@ public class Loader
     return o;
   }
  
-  public Object ladeClasseDriver(URL[] urls, String klassename) throws Exception
+  public Object ladeClasseDriver(URL[] urls, String klassename)
   {    
     Object o = null;
-    try
-    {
-        URLClassLoader cl = new URLClassLoader(urls, Thread.currentThread().getContextClassLoader());
-        
-        Class<?> c = cl.loadClass( klassename );
-        
-        o = c.newInstance();    
+    try (URLClassLoader cl = new URLClassLoader(urls, Thread.currentThread().getContextClassLoader())) {
+    	
+			Class<?> c = cl.loadClass( klassename );
+			o = c.getDeclaredConstructor().newInstance();  
     } 
     catch (Exception | UnsupportedClassVersionError ex)
     {
-        Logger.getLogger(Loader.class.getName()).log(Level.SEVERE, null, ex);     
+        //Logger.getLogger(Loader.class.getName()).log(Level.SEVERE, null, ex);
+        ex.printStackTrace();
     }
     return o;
   }

@@ -1,7 +1,16 @@
 Version 3.13.0, 20.05.2023
-    * Moved resources to src/Assets. (Started in https://github.com/sPyOpenSource/myopenlab)
-    * Moved internationalization files to src/VisualLogic/NOI18N. (Started in https://github.com/sPyOpenSource/myopenlab)
+    * Moved resources to src/Assets. Started by https://github.com/sPyOpenSource/myopenlab
+    * Moved internationalization files to src/VisualLogic/NOI18N. Started by https://github.com/sPyOpenSource/myopenlab
     * Code cleanup. Started moving java.io code to to java.nio.
     * New Path and Themes tab in Options dialog. It is now possible to switch between the System, Metal and Nimubs themes in java.
     * Rudimentary command line options.
     * Started translating Elements library documentation to English.
+    * User can manually choose Elements path if not found automatically.
+    
+    21.05.2023
+    * Global save path
+    * English documentation : MathCalc
+    
+    29.05.2023
+    * Code cleanup and UI redesigned in DialogCreateNewGroup.java
+    * AppImage build

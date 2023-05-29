@@ -40,7 +40,7 @@ public class DialogNewProject extends javax.swing.JDialog
         this.parent=parent;
         initComponents();
         
-        String path=new File(parent.settings.getOldProjectPath()).getAbsolutePath();
+        String path = parent.getSavePath().toAbsolutePath().toString();
         jTextField2.setText(path);
         
         make();

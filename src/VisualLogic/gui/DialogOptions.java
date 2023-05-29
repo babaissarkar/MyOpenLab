@@ -25,6 +25,8 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.io.File;
+import java.nio.file.Path;
+
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
 import javax.swing.border.TitledBorder;
@@ -526,7 +528,7 @@ public class DialogOptions extends JDialog
         JPanel pnlElementPath = new JPanel();
         JLabel lblElementPath = new JLabel(bundle.getString("DialogOptions.lblElementPath.text"));
         txtElementPath = new JTextField(25);
-        txtElementPath.setText(FrameMain.elementPath);
+        txtElementPath.setText(Path.of(FrameMain.elementPath).toAbsolutePath().toString()); // Sanitized path.
         JButton btnElementPath = new JButton("Browse...");
         btnElementPath.addActionListener(
         	e -> {
@@ -540,6 +542,7 @@ public class DialogOptions extends JDialog
         );
         pnlElementPath.setLayout(new BoxLayout(pnlElementPath, BoxLayout.X_AXIS));
         pnlElementPath.add(lblElementPath);
+        pnlElementPath.add(Box.createHorizontalStrut(20));
         pnlElementPath.add(txtElementPath);
         pnlElementPath.add(btnElementPath);
         
@@ -548,6 +551,7 @@ public class DialogOptions extends JDialog
         JPanel pnlUPath = new JPanel();
         pnlUPath.setLayout(new BoxLayout(pnlUPath, BoxLayout.X_AXIS));
         pnlUPath.add(jLabel1);
+        pnlUPath.add(Box.createHorizontalStrut(10));
         pnlUPath.add(txtUserdefPath);
         pnlUPath.add(jButton3);
         
@@ -573,6 +577,7 @@ public class DialogOptions extends JDialog
         		);
         pnlProjectPath.setLayout(new BoxLayout(pnlProjectPath, BoxLayout.X_AXIS));
         pnlProjectPath.add(lblProjectPath);
+        pnlProjectPath.add(Box.createHorizontalStrut(10));
         pnlProjectPath.add(txtProjectPath);
         pnlProjectPath.add(btnProjectPath);
         
@@ -581,21 +586,11 @@ public class DialogOptions extends JDialog
         JLabel lblConfigPath = new JLabel(bundle.getString("DialogOptions.lblConfigPath.text"));
         txtConfigPath = new JTextField(25);
         txtConfigPath.setText(FrameMain.frm.getConfigPath().toString());
-        JButton btnConfigPath = new JButton("Browse...");
-        btnConfigPath.addActionListener(
-            	e -> {
-            		JFileChooser files = new JFileChooser();
-            		files.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-            		int status = files.showOpenDialog(this);
-            		if (status == JFileChooser.APPROVE_OPTION) {
-            			txtConfigPath.setText(files.getSelectedFile().getAbsolutePath());
-            		}
-            	}
-            );
+        txtConfigPath.setEditable(false);
         pnlConfigPath.setLayout(new BoxLayout(pnlConfigPath, BoxLayout.X_AXIS));
         pnlConfigPath.add(lblConfigPath);
+        pnlConfigPath.add(Box.createHorizontalStrut(10));
         pnlConfigPath.add(txtConfigPath);
-        pnlConfigPath.add(btnConfigPath);
         
         pnlPaths.add(pnlElementPath);
         pnlPaths.add(pnlUPath);

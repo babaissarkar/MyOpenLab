@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=MyOpenLab
+Name[en]=MyOpenLab
+GenericName=Graphical Java(R) Programming
+Exec=myopenlab
+Icon=myopenlab
+Terminal=false
+Categories=Development;Engineering;Electronics;
+MimeType=text/x-myopenlab
+Keywords=embedded electronics;electronics;avr;microcontroller;programming;

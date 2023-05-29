@@ -875,10 +875,10 @@ public class Basis extends Object implements ElementIF, VSBasisIF {
             return;
         }
 
-        JFileChooser chooser = new JFileChooser(FrameMain.frm.getSavePath().toAbsolutePath().toFile());
-//        chooser.setCurrentDirectory(FrameMain.frm.getSavePath().toAbsolutePath().toFile());
-//        System.out.println("Save Path = " + FrameMain.frm.getSavePath().toAbsolutePath().toString());
-//        chooser.setSelectedFile(new File(fileName));
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(FrameMain.frm.getSavePath().toAbsolutePath().toFile());
+
+        System.out.println(chooser.getCurrentDirectory().toPath().toString());
 
         chooser.setDialogTitle(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/Basic").getString("Speichern_als..."));
         chooser.setDialogType(JFileChooser.SAVE_DIALOG);

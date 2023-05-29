@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=MyOpenLab
+GenericName=Graphical Java(R) Programming
+Path=/home/ssarkar/Documents/Projects/Java/Eclipse/MyOpenLab/distribution
+Exec=sh start_linux
+Icon=/home/ssarkar/Documents/Projects/Java/Eclipse/MyOpenLab/distribution/images/IconoLauncher.png
+Terminal=false
+Categories=Development;Engineering;Electronics;
+MimeType=text/x-myopenlab
+Keywords=embedded electronics;electronics;avr;microcontroller;

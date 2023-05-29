@@ -58,10 +58,7 @@ public class DialogDistributionAssistent extends javax.swing.JDialog
                 
         make();
     }
-    
-    
-    
-    
+      
     public void listAllVMs(String projectPath)
     {
         jComboBox1.removeAllItems();
@@ -92,7 +89,7 @@ public class DialogDistributionAssistent extends javax.swing.JDialog
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
@@ -104,7 +101,7 @@ public class DialogDistributionAssistent extends javax.swing.JDialog
         jTextField4 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogDistributionAssistent_es_ES"); // NOI18N
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogDistributionAssistent"); // NOI18N
         setTitle(bundle.getString("DISTRIBUTION ASSISTENT")); // NOI18N
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
@@ -278,7 +275,7 @@ public class DialogDistributionAssistent extends javax.swing.JDialog
         OnlyDirectoryFilter filter= new OnlyDirectoryFilter();
         chooser.setFileFilter(filter);
         
-        chooser.setDialogTitle(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogDistributionAssistent_es_ES").getString("BROWSE..."));
+        chooser.setDialogTitle(java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogDistributionAssistent").getString("BROWSE..."));
         chooser.setDialogType(JFileChooser.DIRECTORIES_ONLY);
         
         chooser.setCurrentDirectory(new File("."));
@@ -320,7 +317,7 @@ public class DialogDistributionAssistent extends javax.swing.JDialog
 
         if (jComboBox1.getSelectedItem()==null || ((String)jComboBox1.getSelectedItem()).length()==0)
         {
-            Tools.showMessage(this,java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogDistributionAssistent_es_ES").getString("PLEASE SELECT A MAIN VM."));
+            Tools.showMessage(this,java.util.ResourceBundle.getBundle("VisualLogic/NOI18N/DialogDistributionAssistent").getString("PLEASE SELECT A MAIN VM."));
             return;
         }
             
@@ -340,7 +337,7 @@ public class DialogDistributionAssistent extends javax.swing.JDialog
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
